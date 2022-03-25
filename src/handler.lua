@@ -30,6 +30,5 @@ local jwt_token = jwt:sign(
     }
   )
    kong.service.request.set_header(get_jwt_set_header_prefix, jwt_token)
-end
 
 return SetRequestJWTHeader
