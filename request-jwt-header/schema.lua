@@ -9,6 +9,7 @@ return {
         fields = {
           { jwt_secret = { type = "string", default = "JWT_Secret"}, },
           { jwt_expires_in = { type = "number", default = 8 * 60 * 60 },
+          { jwt_set_header_prefix = { type = "string", default = "X-Kong-JWT-Kong" },
         },
        },
      },
